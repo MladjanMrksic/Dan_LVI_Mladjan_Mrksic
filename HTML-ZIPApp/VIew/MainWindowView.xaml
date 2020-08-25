@@ -26,12 +26,12 @@
                     <ColumnDefinition Width="auto"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <TextBox Grid.Column="3" Grid.Row="1" />
+                <TextBox Name="txtSite" Grid.Column="3" Grid.Row="1" />
                 <Label Grid.Column="1" Grid.Row="1" Content="Site URL:" Foreground="White"/>
                 <StackPanel Grid.Column="3" Grid.Row="3" Orientation="Horizontal">
-                    <Button Name="btnClose" Content="Get HTML" Width="auto" Height="30" HorizontalAlignment="Left" Margin="0,0,20,0" Command="{Binding Close, UpdateSourceTrigger=PropertyChanged}" FontWeight="Bold"/>
-                    <Button Name="btnNewOrder" Content="ZIP HTML" Width="auto" Height="30" HorizontalAlignment="Center" Margin="0,0,20,0" Command="{Binding NewOrder, UpdateSourceTrigger=PropertyChanged}" FontWeight="Bold"/>
-                    <Button Name="btnPrintBill" Content="Close" Width="auto" Height="30" HorizontalAlignment="Right" Margin="0,0,0,0" Command="{Binding PrintBill, UpdateSourceTrigger=PropertyChanged}" FontWeight="Bold"/>
+                    <Button Name="brnGetHTML" Content="Get HTML" Width="auto" Height="30" HorizontalAlignment="Left" Margin="0,0,20,0" Command="{Binding GetHTML, UpdateSourceTrigger=PropertyChanged}" FontWeight="Bold"/>
+                    <Button Name="btnZipHTML" Content="ZIP HTML" Width="auto" Height="30" HorizontalAlignment="Center" Margin="0,0,20,0" Command="{Binding ZipHTML, UpdateSourceTrigger=PropertyChanged}" FontWeight="Bold"/>
+                    <Button Name="btnClose" Content="Close" Width="auto" Height="30" HorizontalAlignment="Right" Margin="0,0,0,0" Command="{Binding Close, UpdateSourceTrigger=PropertyChanged}" FontWeight="Bold"/>
                 </StackPanel>
             </Grid>
         </Border>
